@@ -1,0 +1,7 @@
+For German: Glyph Anmeldung
+For French: Connexion à Glyph
+For Russian: Вход в систему Glyph
+For Spanish: Inicio de sesión de Glyph
+For Portugese: Login da Glyph
+For Korean: Glyph 로그인
+For Japanese: 登录 Glyph

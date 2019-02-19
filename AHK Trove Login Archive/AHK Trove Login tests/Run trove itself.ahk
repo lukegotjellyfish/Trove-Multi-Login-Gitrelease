@@ -1,0 +1,1 @@
+﻿Runwait, Trove.exe, C:\Program Files (x86)\Steam\steamapps\common\Trove\Games\Trove\Live

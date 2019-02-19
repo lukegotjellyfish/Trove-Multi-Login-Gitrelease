@@ -1,0 +1,197 @@
+12 clients:
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 0, 495, 355 ;1ST LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 473, 0, 495, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 953, 0, 495, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 1433, 0, 495, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 345, 495, 355 ;2ND LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 473, 345, 495, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 953, 345, 495, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 1433, 345, 495, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 690, 495, 355 ;3RD LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 473, 690, 485, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 953, 690, 485, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 1443, 690, 485, 355
+; all checked
+
+
+11 clients:
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 0, 495, 355 ;1ST LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 473, 0, 495, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 953, 0, 495, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 1433, 0, 495, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 345, 495, 355 ;2ND LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 473, 345, 495, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 953, 345, 495, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 1433, 345, 495, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 690, 495, 355 ;3RD LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 473, 690, 485, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 944, 690, 983, 355 ;Longer than usual
+; all checked
+
+
+10 clients:
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 0, 495, 355 ;1ST LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 473, 0, 495, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 953, 0, 495, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 1433, 0, 495, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 345, 495, 355 ;2ND LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 473, 345, 495, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 953, 345, 495, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 1433, 345, 495, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 690, 970, 355 ;3RD LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 948, 690, 979, 355 ;Longer than usual
+; all checked
+
+
+9 clients:
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 0, 655, 355 ;1ST LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 633, 0, 655, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 1273, 0, 655, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 347, 655, 355 ;2ND LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 633, 347, 655, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 1273, 347, 655, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 694, 655, 355 ;3RD LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 633, 694, 655, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 1273, 694, 655, 355
+; all checked
+
+
+8 clients:
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 0, 500, 540 ;1ST LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 478, 0, 500, 540 ;+489
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 963, 0, 500, 540
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 1448, 0, 500, 540
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 530, 500, 540 ;2ND LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 478, 530, 500, 540 ;+489
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 963, 530, 500, 540
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 1448, 530, 500, 540
+; all checked
+
+
+7 clients:
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 0, 970, 355 ;1ST LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 948, 0, 979, 355 ;Longer than usual
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 345, 970, 355 ;2ND LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 948, 345, 979, 355
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 692, 655, 357 ;3RD LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 633, 692, 655, 357
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 1273, 692, 655, 357
+;all checked
+
+6 clients:
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 0, 970, 355 ;1ST LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 948, 0, 979, 355 ;Longer than usual
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 345, 970, 355 ;2ND LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 948, 345, 979, 355 ;Longer than usual
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 690, 970, 355 ;3RD LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 948, 690, 979, 355 ;Longer than usual
+; all checked
+
+
+5 clients:
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 0, 970, 355 ;1ST LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 948, 0, 979, 355 ;Longer than usual
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 345, 970, 355 ;2ND LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 948, 345, 979, 355 ;Longer than usual
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 690, 970, 355 ;3RD LINE
+; all checked
+
+4 clients:
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 0, 975, 527 ;1ST LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 953, 0, 975, 527
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 517, 975, 527 ;2ND LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 953, 517, 975, 527
+; all checked
+
+3 clients:
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 0, 975, 527 ;1ST LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 953, 0, 975, 527
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 517, 1935, 527 ;2ND LINE
+; all checked
+
+2 clients:
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 0, 975, 1054 ;1ST LINE
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, 953, 0, 975, 1054
+; all checked
+
+1 client:
+WinGetActiveTitle, windowTitle
+WinMove, %windowTitle%,, -7, 0, 975, 1054 ;1ST LINE
+; all checked

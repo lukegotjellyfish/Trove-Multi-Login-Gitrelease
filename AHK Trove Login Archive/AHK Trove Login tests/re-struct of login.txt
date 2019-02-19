@@ -1,0 +1,39 @@
+	else if num = 30
+	{
+		clear_email_glyph_login()
+		send_from_clipboard(Email_Thirty)
+        clipboard = `
+		ControlClick, x147 y322, %glyphloginname%
+		Sleep, %normal_sleep%
+		send_from_clipboard(Password_Thirty)
+        clipboard = `
+		ControlSend,, {enter down}{enter up}, %glyphloginname%
+		WinWaitNotActive, %glyphloginname%,, 2
+		if ErrorLevel
+		{
+			login_account(30)
+		}
+		Sleep, %wait_for_glyph_to_login%
+		ControlClick, x430 y530, Glyph
+	}
+	
+	
+	
+compact_login_account(num, email, pass)
+{
+	clear_email_glyph_login()
+	send_from_clipboard(email)
+	clipboard = `
+	ControlClick, x147 y322, %glyphloginname%
+	Sleep, %normal_sleep%
+	send_from_clipboard(pass)
+	clipboard = `
+	ControlSend,, {enter down}{enter up}, %glyphloginname%
+	WinWaitNotActive, %glyphloginname%,, 2
+	if ErrorLevel
+	{
+		login_account(num)
+	}	
+	Sleep, %wait_for_glyph_to_login%
+	ControlClick, x430 y530, Glyph	
+}
