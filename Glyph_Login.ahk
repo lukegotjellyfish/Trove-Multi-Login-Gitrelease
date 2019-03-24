@@ -362,7 +362,6 @@ IfNotExist, database.txt  ;//ANCHOR Account adding
 window_setup(runnum, only_once, login)	;//ANCHOR Window_setup
 {
 	Check_internet_connection()
-
 	tc1  := [-7,0,975,1054]
 	tc2  := [-7,0,975,1054,953,0,975,1054]
 	tc3  := [-7,0,975,527,953,0,975,527,-7,517,1935,527]
@@ -477,17 +476,13 @@ compact_login_account(email, pass)
 	Sleep, %normal_sleep%
 	Send_from_clipboard(pass)
 	ControlSend,, {enter down}{enter up}, %glyphloginname%
-
 	WinWaitNotActive, %glyphloginname%,, 2  ;login complete
-
 	if (ErrorLevel)
 	{
 		compact_login_account(email, pass)
 	}
-
 	ControlClick, x430 y530, Glyph
 	Sleep, %wait_for_trove_to_open%
-
 	loop
 	{
 		Sleep, %normal_sleep%
@@ -579,7 +574,6 @@ Check_for_pop_up_on_lauch(x)
 	return col
 }
 ;//!SECTION Login Functions
-
 ;//SECTION Exit script
 ;//ANCHOR DoBeforeExit
 class exitclass
