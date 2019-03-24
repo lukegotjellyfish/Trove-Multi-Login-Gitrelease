@@ -1,0 +1,59 @@
+[B]I got bored for a few hours and prioritised this over pointless gaming.
+Killed item delete since it was simply bad. 
+I will try and incorporate Nippy's Boot Drop whenever I can be bothered to look into it. (Making my script less shite took a lot of caffeine)
+I'll also be looking into reducing global variables for emails and passwords but that'll be a big task for the future, possibly.[/B]
+
+[CENTER][SIZE=4]It may be obvious to some but I remind you to [B][COLOR="#FF0000"]use passwords for these accounts that are different to any other passwords you use[/COLOR][/B]. [COLOR="#FF0000"][B]These passwords are saved into a text file, copied to the clipboard for short periods of time and are NOT SECURED![/B][/COLOR][/SIZE][/CENTER]
+
+Example of setup:
+[video=youtube_share;cEzwYj5Oa_k]https://youtu.be/cEzwYj5Oa_k[/video]
+
+[SIZE=5][B]To run these scripts you need [COLOR="#008000"]AutoHotkey[/COLOR]: [URL="https://autohotkey.com/"]https://autohotkey.com/[/URL][/SIZE]
+[SIZE=4]- Only Tested on Windows 10 with Steam Version of Trove in all available languages as of this post date[/B][/SIZE]
+
+
+[SIZE=5][COLOR="#008000"][U][B]How-To-Use![/B][/U][/COLOR][/SIZE]
+[SIZE="3"]1. Extract files into a folder
+2. Run "Glyph Login.ahk"
+3. Enter Emails and Passwords to use
+4. Click Continue
+5. Choose your options
+6. Press Launch
+7. Wait[/SIZE]
+
+[B][SIZE=5]To use this script alongside [URL="https://www.mpgh.net/forum/showthread.php?t=1367110"]Nippy's Fishing bot[/URL]:[/SIZE][/B]
+- Run Nippy's Fishing Bot before logging in the accounts and let the script do the work
+
+
+[B][U][SIZE=4]Current Issues:[/SIZE][/U][/B]
+[SPOILER=Issues]- Reply with a description of the issue you are having, I will try to get back to you and fix it.
+- If the program doesn't seem to click "play" on glyph, try increasing wait_for_glyph_to_login to a higher number (in miliseconds) for optimal use
+- Passwords are as unsafe as can be, considering adding some sort of encrypttion in a later release
+- Not tested much, spent 8 hours changing things and don't have the energy left
+[/SPOILER]
+[SIZE=4][U][B]ChangeLog:[/B][/U][/SIZE]
+[SPOILER=Changes]Changelog:
+-majorly reduced email msgbox process because it was silly-long. Now it's just a variable in a messagebox.
+-removed invdelete
+-reduced setup for FishingBot and Openbackpack for the reason above
+-set openbackpacks to a keybind (f3)
+-changed the method of entering emails and passwords to saving them to the clipboard to paste in, after each email and password the clipboard is cleared
+-shortened login_account(num) by calling another function
+-included a check for missing clients, if so: close all and start them again
+-included delays between moving windows and naming them, stopping as many crashes
+-reduced the script length by over 1000 lines
+-options_Gui and open_backpack are separate files, closing after 5 seconds if Glyph Login.ahk isn't running
+-enough scripts to warrant a file for 
+
+Changed nothing about the restarting system and nippy's fishing bot, so notify my in the comments if something's wrong with them.
+ [/SPOILER]
+
+[SIZE=6][COLOR="#B22222"]Exit key for each script is F4[/COLOR][/SIZE]
+
+[SIZE=4][COLOR="#00FF00"][B]VirtusTotal:[/B] 0/56 (11 unable to process)[/COLOR][/SIZE]
+[url]https://www.virustotal.com/#/file/a7b280e1f2a9bcd2102afe43867e51259622e039c6a7f7f6ea  a2fa3138ce29d9/detection[/url]
+[SIZE=4][COLOR="#00FF00"][B]VirusScan:[/B] (0/15)[/COLOR][/SIZE]
+[url]https://virusscan.jotti.org/en-US/filescanjob/uhk9qba41c[/url]
+
+[SIZE=6][COLOR="#0000FF"][B]Download: (wait for file approval)[/B][/COLOR][/SIZE]
+[ATTACH]398073[/ATTACH]

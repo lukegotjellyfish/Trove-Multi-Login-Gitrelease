@@ -1,0 +1,77 @@
+So I kinda spent a while making the login work for Trove.exe without Glyph. I completely forgot that you can't actually log in with Trove.exe even though it gives you a menu to do so.
+
+So rip my time.
+I'm working on adding multiple options to the script for opening the backpack on login, integrating an optional item destroyer and other stuff.
+I finish exams in 2 days, had my 2nd last one today and I'm bored. 
+
+[SIZE=4]I'm looking for more suggestions for things to add, optional or not.
+Enough about me, here's the script:[/SIZE]
+
+
+[SIZE=4][B]This uses an auto-Trove window resizer to fill the screen (above the taskbar) for each setting (1-12 accounts at a time). You will have to wait for all Trove windows to be resized before pressing any keys or errors may occur.[/B][/SIZE]
+
+[B][SIZE=4][COLOR="#FF0000"]Warning:[/COLOR][/SIZE][/B] If you continue using wrong passwords and try to login your IP may be blocked, to fix this you can contact support. Make sure your emails and passwords are right! If the AHK script seems to type them wrong, increase the delays.
+
+[SIZE=4]It may be obvious to some but I remind you to [B][COLOR="#FF0000"]use passwords for these accounts that are different to any other passwords you use[/COLOR][/B]. [COLOR="#FF0000"][B]These passwords are saved into a text file and are NOT SECURED![/B][/COLOR][/SIZE]
+[SIZE=3][COLOR="#008000"][B]Thanks [/B][/COLOR]and [COLOR="#008000"][B]+reps[/B][/COLOR] [B]are appreciated[/B] as I'm giving you free stuff while I'm learning AHK, it's a motivation.[/SIZE]
+
+[COLOR="#00FF00"][SIZE=7][B][CENTER]V1.51[/CENTER][/B][/SIZE][/COLOR]
+[CODE][/CODE]
+
+
+[SIZE=5][B]To run this script you need [COLOR="#008000"]AutoHotkey[/COLOR]: [URL="https://autohotkey.com/"]https://autohotkey.com/[/URL][/SIZE]
+[SIZE=4]- Only Tested on Windows 10 with Steam Version of Trove
+- If run as Administror, inputs will be blocked untill setup has finished[/B][/SIZE]
+
+
+[SIZE=5][COLOR="#008000"][U][B]How-To-Use![/B][/U][/COLOR][/SIZE]
+1. Create an AHK file and paste the code in.
+2. Run the AHK file to save emails and passwords to a text file
+3. Re-run the AHK file ([B]Glyph doesn't need to be open already[/B])
+4. Wait, Trove clients will open, be resized and renamed, and be moved.
+
+
+[SIZE=4][U][B]Names of important variables:[/B][/U][/SIZE]
+[SPOILER=Important vars][COLOR="#A52A2A"]- Email_<number 1-12> = Email to save or taken from file on line 1,3,5,7,9,11,13,15,17,19,21 or 23
+- Password_<number 1-12> = Password to save or taken from file on line 2,4,6,8,10,12,14,16,18,20,22 or 24
+- delay_time_in_ms = Delay in ms between each keypress
+- wait_for_login = Time in ms to delay, waiting for login menu to go away
+- wait_for_trove_to_open = Time in ms to delay, waiting for trove client to open
+- normal_sleep = Time in ms to delay common actions
+- breakline = Variable that acts as, `n, used to make a newline.
+- runnum = Variable that holds the number of the current account (1-12)
+- has_<1-12>_been_run = variable to check if the highest number of email accounts has been detected and already attempted, allows for a "if not exist" on the variable to continue through the statement if returns false.
+- number_on_loop = counts how many times the loop has been passed to kill trove clients to restart
+- how_long_until_restart = delay on how long to wait until all trove instances are closed and re-opened
+
+The Glyph menu is called "Glyph" while the login popup you get is called "Glyph Login"
+(Window)Coords:
+- To click "Login..." = x1065 y20
+- To click the password entry box = x147 y322
+- To click play = x430 y530[/COLOR][/SPOILER]
+
+[B][U][SIZE=4]Current Issues:[/SIZE][/U][/B]
+[SPOILER=Issues]- Reply with a description of the issue you are having, I will try to get back to you and fix it.[/SPOILER]
+
+[SIZE=4][U][B]ChangeLog:[/B][/U][/SIZE]
+[SPOILER=Changes]- Fixed Ctrl+Numpad1 (missed out {}s)
+- added a global variable for script loop for easy editing
+- changed a few delays over to normal
+- instead of launching Glyph yourself, you can now just launch the script with a RunWait addition
+- added a Gui for chosing to loop the script, open backpack at the start and/or run the all-start command for Nippy's Fishing bot
+
+ [/SPOILER]
+[B][SIZE=4]----------------------------------------------------------------------------------------------------------[/SIZE][/B]
+[B][COLOR="#FF0000"][SIZE=5]OLD VERSIONS:[/SIZE][/COLOR][/B]
+(For archiving and learning)
+
+[B][COLOR="#FF0000"][SIZE=5]V1.0, V1.1[/SIZE][/COLOR][/B]
+[SPOILER=1.0/1.1]https://www.mpgh.net/forum/showthread.php?t=1368578[/SPOILER]
+[B][COLOR="#FF0000"][SIZE=5]V1.3[/SIZE][/COLOR][/B]
+[SPOILER=1.3]https://www.mpgh.net/forum/showthread.php?t=1369280[/SPOILER]
+[B][COLOR="#FF0000"][SIZE=5]V1.4[/SIZE][/COLOR][/B]
+[SPOILER=1.4]https://www.mpgh.net/forum/showthread.php?t=1369612[/SPOILER]
+[B][COLOR="#FF0000"][SIZE=5]V1.41[/SIZE][/COLOR][/B]
+[SPOILER=1.41]https://www.mpgh.net/forum/showthread.php?t=1371960[/SPOILER]
+[B][COLOR="#FF0000"][SIZE=5]V1.5[/SIZE][/COLOR][/B]
+[SPOILER=1.41]https://www.mpgh.net/forum/showthread.php?t=1372149[/SPOILER]

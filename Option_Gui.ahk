@@ -1,32 +1,16 @@
-﻿DetectHiddenWindows, On
+﻿#NoEnv
+#SingleInstance, Force
+SendMode Input	; Recommended for new scripts due to its superior speed and reliability.
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetTitleMatchMode, 2
+SetControlDelay -1
+DetectHiddenWindows, On
 
-if (%1% = 1)
-{
-	thing1status := 1
-}
-else
-{
-	thing1status := 0
-}
+SetTimer, check_main, 5000
 
-if (%2% = 1) 
-{
-	thing2status := 1
-}
-else
-{
-	thing2status := 0
-}
-
-if (%3% = 1) 
-{
-	thing3status := 1
-}
-else
-{
-	thing3status := 0
-}
+thing1status := %1%
+thing2status := %2%
+thing3status := %3%
 
 Transparency := 160
 FontSize := 10
@@ -49,15 +33,13 @@ GuiControl,     ,thing3status, %thing3status%
 GuiControl,     ,thing4status, %thing4status%
 Gui, Show, x0 y0 h106 w158
 
-loop
+check_main:
 {
-	Sleep, 5000
-	if !WinExist("Glyph_Login.ahk")
+	if !(WinExist("Glyph_Login.ahk"))
 	{
-		exitApp
+		ExitApp
 	}
 }
 
-!F4::
-^F4::
-F4::ExitApp
+
+$*F4::ExitApp

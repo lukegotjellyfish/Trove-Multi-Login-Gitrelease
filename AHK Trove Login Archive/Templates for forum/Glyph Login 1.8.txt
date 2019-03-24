@@ -1,0 +1,1 @@
+To use the GUI (if you have a different filename) go to line 244 of Glyph Login.ahk to change "RunWait, AutoHotkey.exe GlyphLoginGUI.ahk" to "RunWait, AutoHotkey.exe <YOURFILENAME>.ahk"
