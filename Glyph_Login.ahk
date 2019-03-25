@@ -384,6 +384,10 @@ window_setup(runnum, only_once, login)	;//ANCHOR Window_setup
 		{
 			passnum := runnum * 2
 		}
+		else
+		{
+			passnum = 1
+		}
 		Run_login_functions(login[passnum], login[(passnum + 1)])
 		Sleep, %normal_sleep%
 		WinMove, Trove,, %x%, %y%, %w%, %h%
