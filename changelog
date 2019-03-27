@@ -1,21 +1,11 @@
-[2.2] Changelog:
+v2.3 Changelog:
+- Account login system recieved a major overhaul, now based on iteration instead of selection.
+- Changed method for finding what language Glyph is using (name for the Login popup)
+- WindowMoving has been converted to an array call which enabled the drastic reduction in filesize.
+- Login error handling slightly changed to improve detection.
+- Error_Display and other external scripts have been modified to increase efficiency.
+- Reformed exitclass.DoBeforeExit to remove both shift, control partial keypresses from an interrupted ControlSend.
+- Increased delays to reduce crashes
 
-Intro:
-Had caffeine withdrawl for a few days, got my fix and went mad and did this among other things.
-Started using Visual Studio Code to do AHK and other languages and it's so much nicer than Notepad++ as it gives the preview of the zoomed out code on the right hand side and it's easier on my eyes, better syntax highlighting and easy file renaming and addition etc.
-The extention i used (Visual Studo Code and extensions are free): https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-autohotkey
-Was thinking about adding password encryption that is "randomly" generated on first run but had problems doing it and gave up. Was thinking of getting two arrays of characters, one as they key, with the key saved in a file to be decoded to the clipboard but maybe I'll add that later.
-TL;DR: I'm a noob at arrays in AHK.
-Was taking a break from study to do this for a few solid hours so don't expect much in the future.
-
-Changes:
--Added "Error_Display.ahk" which I'm using (to some extent) to display errors in a more user-friendly way
--Removed some parts of the startup which just added variables for no reason
--Added fancy magic code to header
-
--Changed check for crashed/closed clients to an individual level so the whole process isn't restarted
---Introduced a function (add_runnum) for adding to runnum to go through clients to launch
---window_setup now takes 2 parameters
---window_setup is now one big single loop so it can be broken out of
-
--Introduced a check for internet connectivity because my internet is a problem and it probably is for others
+Problems:
+- Clients may still crash during the Login period, a problem likely both with the mindowmoving and naming and the program itself, considering making this into a timer looping through an array to interact with the windows after a certain time while still logging in other accounts to reduce wasted runtime.

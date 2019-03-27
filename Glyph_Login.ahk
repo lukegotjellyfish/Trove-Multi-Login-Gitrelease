@@ -384,6 +384,10 @@ window_setup(runnum, only_once, login)	;//ANCHOR Window_setup
 		{
 			passnum := runnum * 2
 		}
+		else
+		{
+			passnum = 1
+		}
 		Run_login_functions(login[passnum], login[(passnum + 1)])
 		Sleep, %normal_sleep%
 		WinMove, Trove,, %x%, %y%, %w%, %h%
@@ -426,13 +430,13 @@ window_setup(runnum, only_once, login)	;//ANCHOR Window_setup
 ;//ANCHOR Run login functions
 Run_login_functions(email, pass)
 {
-	change_account()
-	set_glyph_login_name()
-	compact_login_account(email, pass)
+	Change_account()
+	Set_glyph_login_name()
+	Compact_login_account(email, pass)
 }
 
 ;//ANCHOR Set-up for login
-change_account()
+Change_account()
 {
 	ControlClick, x900 y20, Glyph
 	Sleep, %normal_sleep%
@@ -445,7 +449,7 @@ change_account()
 }
 
 ;//ANCHOR Find Glyph Login windowtitle
-set_glyph_login_name()
+Set_glyph_login_name()
 {
 	glyphlogintitles := ["Glyph Login","Glyph Anmeldung","Connexion à Glyph","Вход в систему Glyph","Inicio de sesión de Glyph","Login da Glyph","Glyph 로그인","登录 Glyph"]
 	loop  ;Keep checking until window is found
@@ -463,7 +467,7 @@ set_glyph_login_name()
 }
 
 ;//ANCHOR Log account into Glyph
-compact_login_account(email, pass)
+Compact_login_account(email, pass)
 {
 	;//NOTE Clears login information
 	loop 3
@@ -479,7 +483,7 @@ compact_login_account(email, pass)
 	WinWaitNotActive, %glyphloginname%,, 2  ;login complete
 	if (ErrorLevel)
 	{
-		compact_login_account(email, pass)
+		Compact_login_account(email, pass)
 	}
 	ControlClick, x430 y530, Glyph
 	Sleep, %wait_for_trove_to_open%
@@ -570,7 +574,7 @@ Check_for_pop_up_on_lauch(x)
 	x     := w_one - w_two
 	y     := h_one + h_two
 	PixelGetColor, col, %x%, %y%, RGB
-	;if col1 = "0x"
+	;if col1 = "0x000000"
 	return col
 }
 ;//!SECTION Login Functions
