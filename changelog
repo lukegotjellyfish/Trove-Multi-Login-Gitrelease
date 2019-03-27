@@ -8,4 +8,6 @@ v2.3 Changelog:
 - Increased delays to reduce crashes
 
 Problems:
-- Clients may still crash during the Login period, a problem likely both with the mindowmoving and naming and the program itself, considering making this into a timer looping through an array to interact with the windows after a certain time while still logging in other accounts to reduce wasted runtime.
+- Clients may still crash during the Login period, a problem likely both with the mindowmoving and naming and the program itself, 
+  considering making this into a timer looping through an array to interact with the windows after a certain time while still logging 
+  in other accounts to reduce wasted runtime.
