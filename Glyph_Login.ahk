@@ -5,11 +5,25 @@ SendMode Input	; Recommended for new scripts due to its superior speed and relia
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 SetTitleMatchMode, 2
 SetControlDelay -1
+SetKeyDelay, 20, 5
 
+;//SECTION Remarks
 /*
-	"//(!)<name>" are bookmarks (from a VS Code extension):
-	https://marketplace.visualstudio.com/items?itemName=ExodiusStudios.comment-anchors
+	Note: "//(!)<name>" are bookmarks (from a VS Code extension):
+	  https://marketplace.visualstudio.com/items?itemName=ExodiusStudios.comment-anchors
 
+
+	╔════════════════════════════════════════════════════════════════════════════════╗
+	║╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳║
+	╠════════════════════════════════════════════════════════════════════════════════╣
+	║    Discord: Lukegotjellyfish#0473                                              ║
+	║    GitHub rep: https://github.com/lukegotjellyfish/Trove-Login-Gitrelease      ║
+	║    Copyright (C) 2019  Luke Roper                                              ║
+	╚════════════════════════════════════════════════════════════════════════════════╝
+*/
+
+//NOTE Copyright
+/*
    Copyright 2019 Luke Roper
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,19 +37,18 @@ SetControlDelay -1
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
-
 */
+;//!SECTION Remarks
 
 ;//SECTION Global Vars
 global normal_sleep 			 := 300
 global wait_for_trove_to_open	 := 5
 global how_long_until_restart	 := 3600000
 global wait_for_glyph_to_login	 := 2200
-login			:= []
-trove_directory := "C:\Program Files (x86)\Steam\steamapps\common\Trove"
 ;//!SECTION Global Vars
 
-SetKeyDelay, 20, 5
+login			:= []
+trove_directory := "C:\Program Files (x86)\Steam\steamapps\common\Trove"
 
 ;//SECTION Fetch login details
 if FileExist("database.txt") ;//ANCHOR Email reading
@@ -592,13 +605,3 @@ class exitclass
 ;//ANCHOR Exit Script
 $*F4::ExitApp
 ;//!SECTION Exit script
-
-/* //NOTE Notices
-╔════════════════════════════════════════════════════════════════════════════════╗
-║╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳╳║
-╠════════════════════════════════════════════════════════════════════════════════╣
-║    Discord: Lukegotjellyfish#0473                                              ║
-║    GitHub rep: https://github.com/lukegotjellyfish/Trove-Login-Gitrelease      ║
-║    Copyright (C) 2019  Luke Roper                                              ║
-╚════════════════════════════════════════════════════════════════════════════════╝
-*/
