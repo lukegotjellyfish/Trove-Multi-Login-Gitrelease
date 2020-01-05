@@ -116,7 +116,7 @@ if FileExist("database.txt") ;//ANCHOR Email reading
 
 	if (launch_with_gui = 1)
 	{
-		Run, AutoHotkey.exe Option_Gui.ahk %OpenBackpack% %LaunchFishingBot% %RestartEveryDelay%
+		Run, Autohotkey.exe Option_Gui.ahk %OpenBackpack% %LaunchFishingBot% %RestartEveryDelay%
 	}
 	;//SECTION Runmodes
 	;//ANCHOR Restart every x
@@ -131,7 +131,7 @@ if FileExist("database.txt") ;//ANCHOR Email reading
 			}
 			if (OpenBackpack)
 			{
-				Run, AutoHotKey.exe Open_Backpack.ahk
+				Run, Autohotkey.exe Open_Backpack.ahk
 			}
 
 			Sleep, %how_long_until_restart%
@@ -153,7 +153,7 @@ if FileExist("database.txt") ;//ANCHOR Email reading
 		}
 		if (OpenBackpack)
 		{
-			Run, AutoHotKey.exe, Open_Backpack.ahk
+			Run, Autohotkey.exe, Open_Backpack.ahk
 		}
 		ExitApp
 	}
@@ -372,7 +372,9 @@ IfNotExist, database.txt  ;//ANCHOR Account adding
 }
 ;//!SECTION Create login details
 ;//SECTION Login functions
-window_setup(runnum, only_once, login)	;//ANCHOR Window_setup
+
+;//ANCHOR Window_setup
+window_setup(runnum, only_once, login)
 {
 	Check_internet_connection()
 	tc1  := [-7,0,975,1054]
