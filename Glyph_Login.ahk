@@ -83,16 +83,16 @@ if FileExist("database.txt") ;//ANCHOR Email reading
 	Gui, Add, Tab, x-6 y-2 w250 h225, Launch Options|Info|Emails
 
 	Gui, Tab, Launch Options
-	howlonguntilrestartseconds := Round(how_long_until_restart /= 60000, 2)
+	howlonguntilrestartseconds := Round(how_long_until_restart / 60000, 2)
 	Gui, Add, CheckBox, x32 y29 w150 h30 vOpenBackpack, F3 To Open backpack on all clients, when in-game
-	Gui, Add, CheckBox, x32 y58 w150 h30 vLaunchFishingBot, Start Nippy's fishing bot upon launch
+	Gui, Add, CheckBox, x32 y58 w150 h30 vLaunchFishingBot, Start Nippy's fishing bot upon launch  ;'
 	Gui, Add, CheckBox, x32 y90 w150 h30 vRestartEveryDelay, Restart clients every %howlonguntilrestartseconds% minutes
 	Gui, Add, CheckBox, x32 y118 w150 h30 vlaunch_with_gui, Launch with Option_Gui
 	Gui, Add, Button, x22 y155 w200 h40 glaunchthemainscript, Launch
 
 	Gui, Tab, Info
-	Gui, Add, Text, x12 y29 w220 h70, Made by BLURREDDOGE / JELLYMAN123`nCopyright 2018`, Luke Roper`, All rights reserved. - https://www.gov.uk/copyright
-	Gui, Add, Text, x12 y99 w220 h42 +border, - You are free to edit this but under no circumstances`, without my written permission`, are you allowed to redistribute this code yourself.
+	Gui, Add, Text, x12 y29 w220 h70, Made by BLURREDDOGE / JELLYMAN123`nCopyright 2018`, Luke Roper
+	Gui, Add, Text, x12 y99 w220 h42 +border, - You are free to edit and redistribute this according to
 
 	Gui, Tab, Emails
 	Gui, Add, Button, x22 y25 w200 h190 gshowemails, Show Emails
