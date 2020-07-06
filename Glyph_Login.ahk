@@ -18,26 +18,9 @@ SetKeyDelay, 20, 5
 	╠════════════════════════════════════════════════════════════════════════════════╣
 	║    Discord: Lukegotjellyfish#0473                                              ║
 	║    GitHub rep: https://github.com/lukegotjellyfish/Trove-Login-Gitrelease      ║
-	║    Copyright (C) 2019  Luke Roper                                              ║
 	╚════════════════════════════════════════════════════════════════════════════════╝
 */
 
-//NOTE Copyright
-/*
-   Copyright 2019 Luke Roper
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-	   http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-*/
 ;//!SECTION Remarks
 
 ;//SECTION Global Vars
@@ -47,8 +30,9 @@ global how_long_until_restart	 := 3600000
 global wait_for_glyph_to_login	 := 2200
 ;//!SECTION Global Vars
 
-login			:= []
-trove_directory := "C:\Program Files (x86)\Steam\steamapps\common\Trove"
+login			     := []
+trove_directory      := "C:\Program Files (x86)\Steam\steamapps\common\Trove"
+autohotkey_directory := "D:\Code\AHK\AHK 1.1\%autohotkey_directory%"
 
 ;//SECTION Fetch login details
 if FileExist("database.txt") ;//ANCHOR Email reading
@@ -75,7 +59,7 @@ if FileExist("database.txt") ;//ANCHOR Email reading
 	}
 	catch
 	{
-		Run, Autohotkey.exe, Error_Display.ahk, 1
+		Run, %autohotkey_directory%, Error_Display.ahk, 1
 	}
 
 	;//ANCHOR Launch GUI
@@ -116,7 +100,7 @@ if FileExist("database.txt") ;//ANCHOR Email reading
 
 	if (launch_with_gui = 1)
 	{
-		Run, Autohotkey.exe Option_Gui.ahk %OpenBackpack% %LaunchFishingBot% %RestartEveryDelay%
+		Run, %autohotkey_directory% Option_Gui.ahk %OpenBackpack% %LaunchFishingBot% %RestartEveryDelay%
 	}
 	;//SECTION Runmodes
 	;//ANCHOR Restart every x
@@ -131,7 +115,7 @@ if FileExist("database.txt") ;//ANCHOR Email reading
 			}
 			if (OpenBackpack)
 			{
-				Run, Autohotkey.exe Open_Backpack.ahk
+				Run, %autohotkey_directory% Open_Backpack.ahk
 			}
 
 			Sleep, %how_long_until_restart%
@@ -153,7 +137,7 @@ if FileExist("database.txt") ;//ANCHOR Email reading
 		}
 		if (OpenBackpack)
 		{
-			Run, Autohotkey.exe, Open_Backpack.ahk
+			Run, %autohotkey_directory%, Open_Backpack.ahk
 		}
 		ExitApp
 	}
@@ -540,7 +524,7 @@ Check_internet_connection()
 		{
 			if (DllCall("Wininet.dll\InternetGetConnectedState", "Str", 0x40,"Int",0)) = 0
 			{
-				Run, Autohotkey.exe Error_Display.ahk 2
+				Run, %autohotkey_directory% Error_Display.ahk 2
 				;//NOTE Sub-loop to wait for reconnection to internet
 				loop
 				{
@@ -553,7 +537,7 @@ Check_internet_connection()
 
 					if !WinExist("Error_Display.ahk")
 					{
-						Run, Autohotkey.exe Error_Display.ahk 3
+						Run, %autohotkey_directory% Error_Display.ahk 3
 						Sleep, 1000
 					}
 				}
