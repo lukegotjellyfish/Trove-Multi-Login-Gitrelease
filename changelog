@@ -1,13 +1,2 @@
-v2.3 Changelog:
-- Account login system recieved a major overhaul, now based on iteration instead of selection.
-- Changed method for finding what language Glyph is using (name for the Login popup)
-- WindowMoving has been converted to an array call which enabled the drastic reduction in filesize.
-- Login error handling slightly changed to improve detection.
-- Error_Display and other external scripts have been modified to increase efficiency.
-- Reformed exitclass.DoBeforeExit to remove both shift, control partial keypresses from an interrupted ControlSend.
-- Increased delays to reduce crashes
-
-Problems:
-- Clients may still crash during the Login period, a problem likely both with the mindowmoving and naming and the program itself, 
-  considering making this into a timer looping through an array to interact with the windows after a certain time while still logging 
-  in other accounts to reduce wasted runtime.
+v2.4 Changelog:
++ Added variable for ahk directory
